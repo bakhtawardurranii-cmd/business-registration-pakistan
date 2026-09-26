@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Business registration, trademark and IP, tax and compliance, and digital services under one roof.">
+  <title>Services | Business, Legal & Digital Services</title>
+  <link rel="canonical" href="https://businessregistrationpakistan.com/services.html">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="assets/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/favicon-192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --paper:#fbfcfc;
+      --paper-2:#f1f5f5;
+      --ink:#152337;
+      --ink-2:#34445a;
+      --muted:#6d7888;
+      --line:#dfe6e7;
+      --navy:#17304a;
+      --navy-2:#10263c;
+      --accent:#159a91;
+      --accent-2:#63c8bf;
+      --accent-soft:#e6f5f3;
+      --gold:#d9a441;
+      --white:#fff;
+      --shadow:0 20px 55px rgba(21,35,55,.09);
+      --shadow-sm:0 10px 30px rgba(21,35,55,.07);
+      --radius:24px;
+      --max:1180px;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:"DM Sans",system-ui,sans-serif;
+      color:var(--ink);
+      background:var(--paper);
+      line-height:1.6;
+      overflow-x:hidden;
+    }
+    a{color:inherit;text-decoration:none}
+    button{font:inherit}
+    .container{width:min(calc(100% - 40px),var(--max));margin-inline:auto}
+
+    header{
+      position:sticky;top:0;z-index:1000;
+      background:rgba(251,252,252,.88);
+      backdrop-filter:blur(18px);
+      -webkit-backdrop-filter:blur(18px);
+      border-bottom:1px solid rgba(223,230,231,.82);
+    }
+    .nav{height:78px;display:flex;align-items:center;gap:28px}
+    .brand{
+      display:flex;align-items:center;gap:10px;flex-shrink:0;
+      font-family:Manrope,sans-serif;font-weight:800;letter-spacing:-.04em;font-size:20px
+    }
+    .brand-mark{
+      width:34px;height:34px;border-radius:10px;background:var(--navy);
+      position:relative;overflow:hidden;box-shadow:0 8px 20px rgba(23,48,74,.2)
+    }
+    .brand-mark:before,.brand-mark:after{
+      content:"";position:absolute;background:var(--accent);border-radius:4px
+    }
+    .brand-mark:before{width:16px;height:3px;left:9px;top:10px;transform:skewY(-26deg)}
+    .brand-mark:after{width:13px;height:3px;left:9px;top:18px;transform:skewY(26deg)}
+    nav{margin-left:auto}
+    nav ul{display:flex;align-items:center;gap:24px;list-style:none}
+    nav a{
+      position:relative;font-size:13px;font-weight:600;color:var(--ink-2);
+      padding:28px 0;transition:.2s
+    }
+    nav a:hover,nav a.active{color:var(--accent)}
+    nav a.active:after{
+      content:"";position:absolute;left:0;right:0;bottom:20px;height:2px;
+      border-radius:10px;background:var(--accent)
+    }
+    .nav-cta,.btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:9px;
+      border:0;cursor:pointer;font-weight:700;transition:.2s
+    }
+    .nav-cta{
+      padding:12px 18px;border-radius:12px;background:var(--navy);color:#fff;
+      box-shadow:0 8px 20px rgba(23,48,74,.18);white-space:nowrap
+    }
+    .nav-cta:hover,.btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(21,35,55,.16)}
+    .menu-btn{display:none;background:none;border:0;cursor:pointer;color:var(--ink);font-size:25px}
+
+    /* PAGE HERO — intentionally much leaner than homepage hero */
+    .page-hero{
+      position:relative;overflow:hidden;padding:82px 0 72px;
+      background:
+        radial-gradient(circle at 92% 15%,rgba(99,200,191,.15),transparent 27%),
+        radial-gradient(circle at 5% 85%,rgba(220,231,242,.4),transparent 28%),
+        var(--paper)
+    }
+    .page-hero:before{
+      content:"";position:absolute;width:430px;height:430px;border-radius:50%;
+      border:1px solid rgba(21,154,145,.08);right:-210px;top:-250px
+    }
+    .page-hero-inner{position:relative;z-index:1;max-width:850px}
+    .breadcrumb{
+      display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);
+      margin-bottom:27px
+    }
+    .breadcrumb a:hover{color:var(--accent)}
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:8px;color:var(--accent);
+      font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.11em;margin-bottom:15px
+    }
+    .eyebrow i{width:7px;height:7px;background:var(--accent);border-radius:50%}
+    h1,h2,h3{font-family:Manrope,sans-serif;letter-spacing:-.045em;line-height:1.1}
+    h1{font-size:clamp(40px,5vw,60px);max-width:850px}
+    .hero-copy{margin-top:18px;color:var(--muted);font-size:17px;max-width:760px}
+
+    /* PILLAR DIRECTORY */
+    .directory{padding:82px 0 95px}
+    .section-intro{max-width:710px;margin-bottom:38px}
+    .kicker{
+      font-size:12px;text-transform:uppercase;letter-spacing:.12em;
+      color:var(--accent);font-weight:800;margin-bottom:11px
+    }
+    .section-intro h2{font-size:clamp(30px,4vw,43px)}
+    .section-intro p{color:var(--muted);margin-top:13px;font-size:15px}
+
+    .pillar-list{display:grid;gap:20px}
+
+    .pillar{
+      background:#fff;border:1px solid var(--line);border-radius:27px;
+      overflow:hidden;box-shadow:0 8px 25px rgba(21,35,55,.035);
+      display:grid;grid-template-columns:34% 66%;
+      transition:.25s
+    }
+    .pillar:hover{box-shadow:var(--shadow-sm);border-color:#ccdcdc}
+
+    .pillar-intro{
+      position:relative;padding:35px;background:linear-gradient(145deg,#f4f9f9,#edf5f5);
+      border-right:1px solid var(--line);overflow:hidden
+    }
+    .pillar-intro:after{
+      content:"";position:absolute;width:190px;height:190px;border-radius:50%;
+      right:-100px;bottom:-95px;background:rgba(99,200,191,.14)
+    }
+    .pillar-icon{
+      position:relative;z-index:1;width:54px;height:54px;border-radius:16px;
+      background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;
+      font-size:21px;font-weight:800;margin-bottom:24px
+    }
+    .pillar-intro h2{position:relative;z-index:1;font-size:27px}
+    .pillar-intro p{
+      position:relative;z-index:1;color:var(--muted);font-size:13px;margin-top:12px;max-width:330px
+    }
+    .pillar-hub{
+      position:relative;z-index:1;display:inline-flex;align-items:center;gap:6px;
+      color:var(--navy);font-size:12px;font-weight:800;margin-top:24px
+    }
+    .pillar-hub span{color:var(--accent)}
+
+    .pillar-services{padding:34px 38px}
+    .service-label{
+      font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:#89939f;
+      font-weight:800;margin-bottom:17px
+    }
+    .service-links{
+      display:grid;grid-template-columns:1fr 1fr;column-gap:35px;row-gap:2px
+    }
+    .service-link{
+      display:flex;align-items:center;justify-content:space-between;gap:12px;
+      padding:13px 0;border-bottom:1px solid #edf0f0;
+      color:var(--ink-2);font-size:13px;font-weight:600
+    }
+    .service-link:hover{color:var(--accent)}
+    .service-link span{color:#9ba7ad;font-size:15px;transition:.2s}
+    .service-link:hover span{color:var(--accent);transform:translateX(3px)}
+
+    /* CROSS-SELL */
+    .cross-sell-wrap{padding:0 0 90px}
+    .cross-sell{
+      position:relative;overflow:hidden;background:var(--navy);color:#fff;border-radius:30px;
+      padding:52px 58px;display:flex;align-items:center;justify-content:space-between;
+      gap:35px;box-shadow:var(--shadow)
+    }
+    .cross-sell:before{
+      content:"";position:absolute;width:380px;height:380px;border-radius:50%;
+      background:rgba(99,200,191,.12);right:-130px;top:-185px
+    }
+    .cross-sell:after{
+      content:"";position:absolute;width:180px;height:180px;border-radius:50%;
+      background:rgba(255,255,255,.04);left:-90px;bottom:-100px
+    }
+    .cross-sell-copy{position:relative;z-index:1}
+    .cross-sell .kicker{color:var(--accent-2)}
+    .cross-sell h2{font-size:clamp(29px,3.5vw,42px);max-width:720px}
+    .cross-sell p{color:#c6d3de;margin-top:12px;max-width:700px;font-size:14px}
+    .cross-actions{position:relative;z-index:2;display:flex;gap:10px;flex-wrap:wrap;flex-shrink:0}
+    .btn{padding:14px 20px;border-radius:13px}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:0 12px 25px rgba(21,154,145,.2)}
+    .btn-secondary{background:transparent;color:var(--navy);border:1px solid var(--line)}
+    .cross-sell .btn-secondary{color:#fff;border-color:rgba(255,255,255,.25)}
+
+    /* SIMPLE CTA */
+    .consultation{
+      background:var(--paper-2);border-top:1px solid #e3e9e9;border-bottom:1px solid #e3e9e9;
+      padding:58px 0
+    }
+    .consult-inner{
+      display:flex;align-items:center;justify-content:space-between;gap:30px
+    }
+    .consult-inner h2{font-size:32px}
+    .consult-inner p{color:var(--muted);font-size:14px;margin-top:6px}
+
+    /* FOOTER */
+    footer{background:var(--navy-2);color:#fff;padding:65px 0 22px}
+    .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:45px}
+    footer .brand{color:#fff}
+    .footer-intro p{color:#aebdca;font-size:13px;max-width:300px;margin-top:15px}
+    .socials{display:flex;gap:8px;margin-top:22px}
+    .social{
+      width:34px;height:34px;border:1px solid rgba(255,255,255,.14);
+      border-radius:10px;display:grid;place-items:center;font-size:12px;color:#d5e0e8
+    }
+    .footer-col h3{
+      font-family:"DM Sans";font-size:12px;text-transform:uppercase;
+      letter-spacing:.1em;color:#fff;margin-bottom:15px
+    }
+    .footer-col a,.footer-col p{display:block;color:#aebdca;font-size:12px;margin:9px 0}
+    .footer-col a:hover{color:#fff}
+    .footer-bottom{
+      border-top:1px solid rgba(255,255,255,.1);margin-top:48px;padding-top:19px;
+      color:#8294a4;font-size:11px;display:flex;justify-content:space-between;gap:15px
+    }
+
+    @media(max-width:1050px){
+      nav ul{gap:14px}
+      .pillar{grid-template-columns:1fr}
+      .pillar-intro{border-right:0;border-bottom:1px solid var(--line)}
+    }
+    @media(max-width:800px){
+      .nav{height:70px}
+      .menu-btn{display:block;margin-left:auto}
+      nav{
+        position:absolute;top:70px;left:0;right:0;background:rgba(251,252,252,.98);
+        border-bottom:1px solid var(--line);display:none;padding:12px 20px 20px
+      }
+      nav.open{display:block}
+      nav ul{flex-direction:column;align-items:stretch;gap:0}
+      nav li a{display:block;padding:12px 5px}
+      nav a.active:after{display:none}
+      .nav-cta{display:none}
+      .directory{padding:65px 0 75px}
+      .cross-sell{padding:42px 30px;flex-direction:column;align-items:flex-start}
+      .consult-inner{align-items:flex-start;flex-direction:column}
+      .footer-grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:560px){
+      .container{width:min(calc(100% - 28px),var(--max))}
+      .page-hero{padding:55px 0 52px}
+      h1{font-size:39px}
+      .hero-copy{font-size:15px}
+      .pillar-intro{padding:28px}
+      .pillar-services{padding:27px 28px}
+      .service-links{grid-template-columns:1fr}
+      .cross-actions{width:100%}
+      .cross-actions .btn{flex:1}
+      .footer-grid{grid-template-columns:1fr}
+      .footer-bottom{flex-direction:column}
+    }
+  
+    .has-dropdown{position:relative}
+    .dropdown-toggle{display:flex;align-items:center;gap:4px;font-size:13px;font-weight:600;color:var(--ink-2);cursor:default;user-select:none;padding:28px 0;transition:.2s}
+    .dropdown-toggle i{font-style:normal;font-size:9px;transition:.2s}
+    .has-dropdown:hover .dropdown-toggle,.has-dropdown:focus-within .dropdown-toggle{color:var(--accent)}
+    .has-dropdown:hover .dropdown-toggle i,.has-dropdown:focus-within .dropdown-toggle i{transform:rotate(180deg)}
+    .has-dropdown.active-parent .dropdown-toggle{color:var(--accent)}
+    .dropdown{list-style:none;position:absolute;top:100%;left:0;min-width:200px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 40px rgba(15,35,55,.14);padding:8px;margin:0;opacity:0;visibility:hidden;transform:translateY(6px);transition:.18s;z-index:1200}
+    .has-dropdown:hover .dropdown,.has-dropdown:focus-within .dropdown{opacity:1;visibility:visible;transform:translateY(0)}
+    .dropdown li{padding:0}
+    .dropdown li a{display:block;padding:10px 12px;border-radius:8px;font-size:13px;font-weight:600;color:var(--ink-2)}
+    .dropdown li a:hover,.dropdown li a.active{background:var(--paper);color:var(--accent)}
+    @media(max-width:800px){
+      .dropdown-toggle{padding:12px 5px 2px;cursor:pointer}
+      .dropdown{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;padding:0 0 6px 14px;background:transparent}
+      .dropdown li a{padding:8px 5px;font-weight:500}
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================================================
+       HEADER / NAV
+       Keep this structure identical to the homepage template.
+       Services is the active navigation item on this page.
+       ========================================================= -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Business services home">
+        <img src="assets/logo.png" alt="Business Registration Pakistan" style="height:34px;width:auto;display:block">
+      </a>
+
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false" id="menuBtn">☰</button>
+
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" class="active" aria-current="page">Services</a></li>
+          <li><a href="tax-compliance.html">Tax & Compliance</a></li>
+          <li><a href="business-registration.html">Business Registration</a></li><li class="has-dropdown"><span class="dropdown-toggle" tabindex="0">Cities <i>&#9662;</i></span><ul class="dropdown"><li><a href="company-registration-karachi.html">Karachi</a></li><li><a href="company-registration-lahore.html">Lahore</a></li><li><a href="company-registration-islamabad.html">Islamabad</a></li></ul></li>
+          <li><a href="trademark-ip.html">Trademark</a></li>
+          <li><a href="digital-services.html">Digital Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="nav-cta" href="contact.html">Get a Free Quote <span>→</span></a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =========================================================
+         1. PAGE HERO
+         Short directory-style hero — deliberately no large artwork.
+         ========================================================= -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-inner">
+          <div class="breadcrumb">
+            <a href="index.html">Home</a><span>›</span><span>Services</span>
+          </div>
+
+          <div class="eyebrow"><i></i> What We Do</div>
+
+          <h1>Business, Legal & Digital Services Under One Roof.</h1>
+
+          <p class="hero-copy">
+            From business registration and trademark protection to tax and compliance and digital growth,
+            explore the four service pillars built to support your business from setup through growth.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         2. FOUR PILLAR DIRECTORY
+         IMPORTANT:
+         - Replace placeholder copy with approved final copy.
+         - Each individual service link should point to its future
+           specific service URL.
+         - Each pillar hub should link to its /pillar/ directory.
+         ========================================================= -->
+    <section class="directory" id="service-directory">
+      <div class="container">
+
+        <div class="section-intro">
+          <div class="kicker">Explore our services</div>
+          <h2>Choose the area where your business needs support.</h2>
+          <p>
+            Each pillar brings related services together so visitors can move from the broad category
+            into the exact service they need.
+          </p>
+        </div>
+
+        <div class="pillar-list">
+
+          <!-- =====================================================
+               PILLAR 1 — BUSINESS REGISTRATION
+               Cross-link examples to future URLs.
+               ===================================================== -->
+          <article class="pillar" id="business-registration">
+            <div class="pillar-intro">
+              <div class="pillar-icon">▣</div>
+              <h2>Business Registration</h2>
+              <p>
+                <!-- FINAL COPY TO BE PROVIDED FROM KEYWORD MAP -->
+                Complete business and company setup support for entrepreneurs,
+                startups and established businesses.
+              </p>
+              <a class="pillar-hub" href="business-registration.html">
+                View all Business Registration services <span>→</span>
+              </a>
+            </div>
+
+            <div class="pillar-services">
+              <div class="service-label">Business Registration Services</div>
+
+              <div class="service-links">
+                <a class="service-link" href="secp-company-registration.html">
+                  <span>SECP Company Registration</span><span>→</span>
+                </a>
+                <a class="service-link" href="private-limited-company.html">
+                  <span>Private Limited Company Registration</span><span>→</span>
+                </a>
+                <a class="service-link" href="sole-proprietorship.html">
+                  <span>Sole Proprietorship Registration</span><span>→</span>
+                </a>
+                <a class="service-link" href="partnership-aop.html">
+                  <span>Partnership / AOP Registration</span><span>→</span>
+                </a>
+                <a class="service-link" href="startup-registration.html">
+                  <span>Startup Registration</span><span>→</span>
+                </a>
+                <a class="service-link" href="business-licensing.html">
+                  <span>Business Licensing</span><span>→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- =====================================================
+               PILLAR 2 — TRADEMARK & IP
+               ===================================================== -->
+          <article class="pillar" id="trademark-ip">
+            <div class="pillar-intro">
+              <div class="pillar-icon">™</div>
+              <h2>Trademark & IP</h2>
+              <p>
+                <!-- FINAL COPY TO BE PROVIDED FROM KEYWORD MAP -->
+                Practical brand protection and intellectual-property support
+                for businesses building valuable identities.
+              </p>
+              <a class="pillar-hub" href="trademark-ip.html">
+                View all Trademark & IP services <span>→</span>
+              </a>
+            </div>
+
+            <div class="pillar-services">
+              <div class="service-label">Trademark & IP Services</div>
+
+              <div class="service-links">
+                <a class="service-link" href="trademark-registration.html">
+                  <span>Trademark Registration</span><span>→</span>
+                </a>
+                <a class="service-link" href="trademark-search.html">
+                  <span>Trademark Search</span><span>→</span>
+                </a>
+                <a class="service-link" href="trademark-renewal.html">
+                  <span>Trademark Renewal</span><span>→</span>
+                </a>
+                <a class="service-link" href="trademark-objection.html">
+                  <span>Trademark Objection Support</span><span>→</span>
+                </a>
+                <a class="service-link" href="brand-protection.html">
+                  <span>Brand Protection</span><span>→</span>
+                </a>
+                <a class="service-link" href="intellectual-property.html">
+                  <span>Intellectual Property Support</span><span>→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- =====================================================
+               PILLAR 3 — TAX & COMPLIANCE
+               ===================================================== -->
+          <article class="pillar" id="tax-compliance">
+            <div class="pillar-intro">
+              <div class="pillar-icon">§</div>
+              <h2>Tax & Compliance</h2>
+              <p>
+                <!-- FINAL COPY TO BE PROVIDED FROM KEYWORD MAP -->
+                Ongoing tax and compliance support to help businesses
+                keep their registrations, filings and records organised.
+              </p>
+              <a class="pillar-hub" href="tax-compliance.html">
+                View all Tax & Compliance services <span>→</span>
+              </a>
+            </div>
+
+            <div class="pillar-services">
+              <div class="service-label">Tax & Compliance Services</div>
+
+              <div class="service-links">
+                <a class="service-link" href="fbr-registration.html">
+                  <span>FBR Registration</span><span>→</span>
+                </a>
+                <a class="service-link" href="ntn-registration.html">
+                  <span>NTN Registration</span><span>→</span>
+                </a>
+                <a class="service-link" href="tax-filing.html">
+                  <span>Tax Filing</span><span>→</span>
+                </a>
+                <a class="service-link" href="sales-tax-registration.html">
+                  <span>Sales Tax Registration</span><span>→</span>
+                </a>
+                <a class="service-link" href="company-compliance.html">
+                  <span>Company Compliance</span><span>→</span>
+                </a>
+                <a class="service-link" href="annual-filing.html">
+                  <span>Annual Filing & Returns</span><span>→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- =====================================================
+               PILLAR 4 — DIGITAL & IT SERVICES
+               ===================================================== -->
+          <article class="pillar" id="digital-services">
+            <div class="pillar-intro">
+              <div class="pillar-icon">↗</div>
+              <h2>Digital & IT Services</h2>
+              <p>
+                <!-- FINAL COPY TO BE PROVIDED FROM KEYWORD MAP -->
+                Digital services that help a newly registered or growing
+                business establish a professional online presence.
+              </p>
+              <a class="pillar-hub" href="digital-services.html">
+                View all Digital & IT services <span>→</span>
+              </a>
+            </div>
+
+            <div class="pillar-services">
+              <div class="service-label">Digital & IT Services</div>
+
+              <div class="service-links">
+                <a class="service-link" href="website-development.html">
+                  <span>Website Development</span><span>→</span>
+                </a>
+                <a class="service-link" href="ecommerce-development.html">
+                  <span>Ecommerce Website Development</span><span>→</span>
+                </a>
+                <a class="service-link" href="seo.html">
+                  <span>SEO Services</span><span>→</span>
+                </a>
+                <a class="service-link" href="digital-marketing.html">
+                  <span>Digital Marketing</span><span>→</span>
+                </a>
+                <a class="service-link" href="business-email.html">
+                  <span>Business Email & Setup</span><span>→</span>
+                </a>
+                <a class="service-link" href="branding.html">
+                  <span>Branding & Digital Identity</span><span>→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         3. CROSS-SELL CALLOUT
+         Links upward to registration pillar and across to digital pillar.
+         ========================================================= -->
+    <section class="cross-sell-wrap">
+      <div class="container">
+        <div class="cross-sell">
+          <div class="cross-sell-copy">
+            <div class="kicker">Registration + Digital</div>
+            <h2>Registering a business and need a website too? We handle both.</h2>
+            <p>
+              Connect your business setup with a professional digital presence instead of managing
+              two separate projects with two disconnected providers.
+            </p>
+          </div>
+
+          <div class="cross-actions">
+            <a class="btn btn-primary" href="business-registration.html">Business Registration</a>
+            <a class="btn btn-secondary" href="digital-services.html">Digital Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         4. SIMPLE CONSULTATION CTA
+         ========================================================= -->
+    <section class="consultation">
+      <div class="container consult-inner">
+        <div>
+          <div class="kicker">Need help choosing?</div>
+          <h2>Not sure which service you need?</h2>
+          <p>Tell us what you are trying to accomplish and we can point you toward the relevant service.</p>
+        </div>
+        <a class="btn btn-primary" href="contact.html">Get a Free Consultation <span>→</span></a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       FOOTER
+       Same footer architecture as homepage.
+       ========================================================= -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-intro">
+          <a class="brand" href="index.html">
+            <img src="assets/logo-icon.png" alt="Business Registration Pakistan" style="height:30px;width:auto;display:block"><span style="font-family:Manrope,sans-serif;font-weight:800;font-size:15px;letter-spacing:-.02em;color:#fff;line-height:1.2;white-space:normal">Business Registration Pakistan</span>
+          </a>
+          <p>
+            Business registration, compliance, brand protection and digital services —
+            brought together in one clear experience.
+          </p>
+
+          <div class="socials">
+            <a class="social" href="#" aria-label="Facebook">f</a>
+            <a class="social" href="#" aria-label="LinkedIn">in</a>
+            <a class="social" href="#" aria-label="Instagram">ig</a>
+          </div><div style="margin-top:16px;font-size:12px;color:#8fa0ad"><span style="text-transform:uppercase;letter-spacing:.08em;color:#7f92a3">Serving</span>&nbsp; <a href="company-registration-karachi.html" style="color:#cfe0e6">Karachi</a> &middot; <a href="company-registration-lahore.html" style="color:#cfe0e6">Lahore</a> &middot; <a href="company-registration-islamabad.html" style="color:#cfe0e6">Islamabad</a></div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Services</h3>
+          <a href="business-registration.html">Business Registration</a>
+          <a href="trademark-ip.html">Trademark & IP</a>
+          <a href="tax-compliance.html">Tax & Compliance</a>
+          <a href="digital-services.html">Digital & IT Services</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Company</h3>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          
+          <a href="services.html">All Services</a>
+        <a href="portfolio.html">Portfolio</a></div>
+
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <p><a href="tel:+923367154999" style="color:inherit">0336-7154999</a> <a href="https://wa.me/923367154999" target="_blank" rel="noopener" style="color:var(--accent,#159a91)">(WhatsApp)</a></p>
+          <p>hello@businessregistrationpakistan.com</p>
+          <p>Office 401, 4th Floor, Dashtiyar Center, Block 13-A, Gulshan-e-Iqbal, Karachi</p>
+          <p>Mon–Sat · 10:00 AM–7:00 PM</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Business Registration Pakistan. All rights reserved.</span>
+        <span>
+          <a href="privacy.html">Privacy</a> ·
+          <a href="terms.html">Terms</a> ·
+          <a href="disclaimer.html">Disclaimer</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    /* Mobile navigation */
+    const menuBtn = document.getElementById('menuBtn');
+    const nav = document.getElementById('mainNav');
+
+    menuBtn.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open);
+      menuBtn.textContent = open ? '×' : '☰';
+    });
+
+    document.querySelectorAll('#mainNav a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        menuBtn.textContent = '☰';
+      });
+    });
+  </script>
+
+
+  <a href="https://wa.me/923367154999" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"
+     style="position:fixed;bottom:22px;right:22px;width:56px;height:56px;background:#25D366;border-radius:50%;
+     display:flex;align-items:center;justify-content:center;box-shadow:0 10px 25px rgba(0,0,0,.28);z-index:2000;">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.13-2.9-7-1.87-1.87-4.36-2.9-7-2.9zm0 18.1a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.37c0-4.53 3.69-8.22 8.23-8.22 2.2 0 4.26.86 5.82 2.42a8.17 8.17 0 0 1 2.41 5.81c0 4.54-3.69 8.21-8.23 8.21zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
+  </a>
+
+</body>
+</html>
