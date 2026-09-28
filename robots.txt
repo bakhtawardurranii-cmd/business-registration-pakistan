@@ -1,0 +1,104 @@
+# robots.txt for https://businessregistrationpakistan.com
+# All crawlers, including search engines and AI/LLM crawlers, are welcome
+# to crawl and cite this site's content.
+
+User-agent: *
+Allow: /
+
+# ---- OpenAI (ChatGPT, SearchGPT, training) ----
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# ---- Anthropic (Claude) ----
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# ---- Google (Search, Gemini, AI Overviews) ----
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# ---- Microsoft (Bing, Copilot) ----
+User-agent: Bingbot
+Allow: /
+
+# ---- Perplexity ----
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# ---- Apple (Siri, Apple Intelligence) ----
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# ---- Meta ----
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+# ---- Amazon ----
+User-agent: Amazonbot
+Allow: /
+
+# ---- Other AI / data crawlers ----
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: Timpibot
+Allow: /
+
+User-agent: Omgilibot
+Allow: /
+
+Sitemap: https://businessregistrationpakistan.com/sitemap.xml
